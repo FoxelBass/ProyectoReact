@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const CardComponent = ({title, img}) => {
+const CardComponent = ({title, img, agregarCarrito}) => {
 
   return (
     <div className="card col-4">
@@ -11,7 +11,7 @@ const CardComponent = ({title, img}) => {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </p>
-        <button className="btn btn-primary" onClick={(event) => {AgregarCarrito(event, 'Dave')}}>Comprar</button>
+        <button className="btn btn-primary" onClick={(event) => {agregarCarrito(event, 'Dave')}}>Comprar</button>
       </div>
     </div>
   );
